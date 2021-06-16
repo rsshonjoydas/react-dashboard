@@ -1,8 +1,9 @@
+import FeaturedInfo from '../../components/FeaturedInfo/FeaturedInfo';
 import styled from './HomePage.module.css';
 
 const HomePage = () => (
   <div className={styled.home}>
-    <h1>Home</h1>
+    <FeaturedInfo />
   </div>
 );
 
