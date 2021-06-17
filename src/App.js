@@ -3,6 +3,8 @@ import GlobalStyle from './App.module.css';
 import Sidebar from './components/Sidebar/Sidebar';
 import TopBar from './components/TopBar/TopBar';
 import HomePage from './pages/Home/HomePage';
+import NewUser from './pages/newUser/newUser';
+import User from './pages/user/User';
 import UserList from './pages/userList/UserList';
 
 function App() {
@@ -17,6 +19,12 @@ function App() {
           </Route>
           <Route path="/users">
             <UserList />
+          </Route>
+          <Route path="/user/:userId">
+            <User />
+          </Route>
+          <Route path="/newUser">
+            <NewUser />
           </Route>
         </Switch>
       </div>
