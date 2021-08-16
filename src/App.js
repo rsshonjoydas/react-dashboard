@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import GlobalStyle from './App.module.css';
+import './App.css';
 import Sidebar from './components/Sidebar/Sidebar';
 import TopBar from './components/TopBar/TopBar';
 import HomePage from './pages/Home/HomePage';
@@ -13,7 +13,7 @@ function App() {
   return (
     <Router>
       <TopBar />
-      <div className={GlobalStyle.container}>
+      <div className="container">
         <Sidebar />
         <Switch>
           <Route exact path="/">
